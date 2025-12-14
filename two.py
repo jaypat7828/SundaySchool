@@ -1,11 +1,4 @@
-# Code 1: Open the Webcam (Starter Code)
-
-# https://github.com/jaypat7828
-
-# pip install opencv-python
-# pip3 install opencv-python
-
-
+# Code 2: Convert Video Frame to HSV Color Space (Slide 7)
 
 import cv2
 cap = cv2.VideoCapture(0)
@@ -13,7 +6,10 @@ while True:
     ret, frame = cap.read()
     if not ret:
         break
-    cv2.imshow("Webcam", frame)
+    
+    hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
+
+    cv2.imshow("Webcam", hsv)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
