@@ -36,7 +36,7 @@ void loop() {
   else if (t == 'W') {  //turn led on or off)
     digitalWrite(9, HIGH);
   } else if (t == 'w') {
-    digitalWrite(9, LOW);
+    --Write your code here --
   }
 
   else if (t == 'S') {  //STOP (all motors stop)
@@ -49,7 +49,7 @@ void loop() {
 
   // Horn (Buzzer) activation ('V')
   else if (t == 'V') {
-    digitalWrite(3, HIGH);  // Turn on the buzzer
+    --Write your code here --
     delay(100);             // Buzzer sounds for 500 milliseconds
     digitalWrite(3, LOW);   // Turn off the buzzer
   }
